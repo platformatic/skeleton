@@ -1,0 +1,28 @@
+{
+  "name": "@platformatic/skeleton",
+  "version": "0.0.1",
+  "description": "",
+  "homepage": "https://github.com/platformatic/skeleton",
+  "author": "Platformatic Inc. <oss@platformatic.dev> (https://platformatic.dev)",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/platformatic/skeleton.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/platformatic/skeleton/issues"
+  },
+  "private": false,
+  "files": ["dist", "LICENSE", "README.md"],
+  "type": "module",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "postpublish": "git push origin && git push origin -f --tags"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">= 22.19.0"
+  }
+}
