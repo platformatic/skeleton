@@ -1,3 +1,4 @@
+import eslintPluginPrettier from 'eslint-plugin-prettier'
 import { globalIgnores } from 'eslint/config'
 import neostandard from 'neostandard'
 
@@ -7,7 +8,11 @@ const eslint = [
   {
     files: ['**/*.ts'],
     rules: {
-      '@typescript-eslint/consistent-type-imports': ['error', { fixStyle: 'inline-type-imports' }]
+      '@typescript-eslint/consistent-type-imports': ['error', { fixStyle: 'inline-type-imports' }],
+      'prettier/prettier': 'error'
+    },
+    plugins: {
+      prettier: eslintPluginPrettier
     }
   }
 ]
